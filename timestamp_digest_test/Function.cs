@@ -15,13 +15,13 @@ namespace timestamp_digest_test
     {
 
         public class OCRPatchInfo {
-            public string TextLine;
-            public string BoundingBox;
-            public float PointX;
-            public float PointY;
-            public int length;
-            public int height;
-            public bool isProcess;
+            public string TextLine { get; set; }
+            public string BoundingBox { get; set; }
+            public float PointX { get; set; }
+            public float PointY { get; set; }
+            public int Length { get; set; }
+            public int Height { get; set; }
+            public bool IsProcess { get; set; }
         }
         
         /// <summary>

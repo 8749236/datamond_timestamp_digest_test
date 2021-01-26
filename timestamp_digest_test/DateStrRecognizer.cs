@@ -69,6 +69,7 @@ namespace timestamp_digest_test
 
         public static string FindDateStr(string[] inputs) {
             foreach (var str in inputs) {
+                if (String.IsNullOrEmpty(str)) continue;
                 foreach (var pair in regexByFormat)
                 {
                     var m = Regex.Match(str, pair.Value);
